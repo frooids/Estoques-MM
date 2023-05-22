@@ -6,11 +6,11 @@ class BancoDados{
     private $dbname;
 
     public function __construct(){
-        $url = parse_url("mysql://b42b7bec78b941:5f3d5edc@us-cdbr-east-06.cleardb.net/heroku_ef57a694d65daea?reconnect=true");
+        $url = parse_url("mysql://b1370622adcbd7:f853f498@us-cdbr-east-06.cleardb.net/heroku_eb9ee63e9f599d0?reconnect=true");
         $this->servername = $url["host"]; // Host do banco de dados
         $this->username = $url["user"]; // Nome de usuário do banco de dados
         $this->password = $url["pass"]; // Senha do banco de dados
-        $this->dbname = substr($url["path"], 1);
+        $this->dbname = 'heroku_eb9ee63e9f599d0';
     }
         
     public function conectar(){
